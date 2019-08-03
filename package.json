@@ -1,0 +1,55 @@
+{
+  "name": "demo",
+  "description": "application created by thinkjs",
+  "version": "1.0.0",
+  "author": "Hagan <303738305@qq.com>",
+  "scripts": {
+    "start": "node development.js",
+    "test": "THINK_UNIT_TEST=1 nyc ava test/ && nyc report --reporter=html",
+    "lint": "eslint src/",
+    "lint-fix": "eslint --fix src/"
+  },
+  "dependencies": {
+    "atob": "^2.1.2",
+    "jwk-to-pem": "^2.0.1",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.6.7",
+    "think-cache": "^1.0.0",
+    "think-cache-file": "^1.0.8",
+    "think-logger3": "^1.0.0",
+    "think-model": "^1.0.0",
+    "think-model-mysql": "^1.0.0",
+    "think-session": "^1.0.0",
+    "think-session-file": "^1.0.5",
+    "think-view": "^1.0.0",
+    "think-view-nunjucks": "^1.0.1",
+    "thinkjs": "^3.0.0",
+    "uuid-parse": "^1.1.0",
+    "webauthn": "^0.1.2"
+  },
+  "devDependencies": {
+    "think-watcher": "^3.0.0",
+    "eslint": "^4.2.0",
+    "eslint-config-think": "^1.0.0",
+    "ava": "^0.18.0",
+    "nyc": "^7.0.0"
+  },
+  "repository": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "readmeFilename": "README.md",
+  "thinkjs": {
+    "metadata": {
+      "name": "demo",
+      "description": "application created by thinkjs",
+      "author": "Hagan <303738305@qq.com>",
+      "babel": false
+    },
+    "projectName": "demo",
+    "template": "/usr/local/lib/node_modules/think-cli/default_template",
+    "clone": false,
+    "isMultiModule": false
+  }
+}

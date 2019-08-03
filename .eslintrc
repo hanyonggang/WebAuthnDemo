@@ -1,0 +1,12 @@
+{
+  "extends": "think",
+  "globals": {
+    "window": true,
+    "axios": true,
+    "navigator": true,
+    "util": true,
+    "document": true,
+    "alert": true
+  },
+  "rules": { "no-console": "off" }
+}

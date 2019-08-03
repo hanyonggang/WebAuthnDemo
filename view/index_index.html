@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+  <title>WebAuthn示例</title>
+  <style>
+    body {
+      word-wrap: break-word;
+    }
+    section {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    td {
+      padding: 6px;
+    }
+    h3 {
+      margin: 0;
+      padding: 0;
+    }
+    .users_h3 {
+      margin-bottom: 10px;
+    }
+    .users ul {
+      margin: 0;
+    }
+    .users h4 {
+      margin-bottom: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h2>WebAuthn Demo</h2>
+  <table>
+      <tr>
+          <td>
+            <h3>用户名：</h3>
+          </td>
+          <td>
+            <input type="text" placeholder="必填" id="username" />
+          </td>
+      </tr>
+      <tr>
+        <td>
+          <h3>昵称：</h3>
+        </td>
+        <td>
+          <input type="text" placeholder="可选" id="alias" />
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <button type="submit" id="register">点击注册</button>
+          <button id="login">点击登陆</button>
+        </td>
+      </tr>
+    </table>
+  
+  <section>
+    <h3>当前登录用户为：</h3>
+    <p id="user"></p>
+  </section>
+
+  <section>
+    <h3>本次登陆使用的证书id为: </h3>
+    <p id="credentialId"></p>
+  </section>
+
+  <section>
+    <h3 class="users_h3">曾注册过的用户信息</h3>
+    <div id="users" class="users"></div>
+  </section>
+
+  <script src="https://lib.baomitu.com/axios/0.19.0/axios.min.js"></script>
+  <script src="/static/js/util.js"></script>
+  <script src="/static/js/index.js"></script>
+</body>
+</html>
